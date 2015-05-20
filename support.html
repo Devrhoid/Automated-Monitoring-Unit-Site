@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UwiRemoteData.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <!--Map Javascript-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+   
+  
+  <style type="text/css">
+  .jumbotron {background-color:#a7f090;}
+  .btn-primary {background-color: #F2F5A9; color:black;}
+  body {background-color: #dddada;}
+  </style>
+</head>
+
+<body onload="load()">
+
+
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="uwiremotedata.html"> <!--UwiRemoteData --></a>
+    </div>
+    <div>
+      <ul class="nav nav-tabs">
+        <li ><a href="uwiremotedata.html">Home</a></li>
+        <li><a href="get_units.php">Units</a></li>
+        <li><a href="select_unit.php">Data</a></li>
+        <li class="active" ><a href="support.html">Help</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container" style="width:1100px;"> <!-- Start of Container Div-->
+	<div class="jumbotron">
+   <div id="uwi_title" style="margin:0px auto; text-align:center;color:white; background-color:red; width:950px;">
+		<h2 style="text-align:center;">The University of the West Indies Mona</h2> 
+		<h3>Site Tutorial</h3>
+   </div>
+    <div id="help">
+	<p id="sitetut">
+	Home page: <br/>
+	You may interact with the map by left clicking in the map area and dragging to the location you desire. 
+	You may also use the slider to the left to zoom to a particular location or use a mouse to zoom. The direction pad located at the top left of the map area
+	may be used to move the map in different directions as well. 
+	You may switch between the roadmap and satellite view by clicking the appropriate tab in the top right of the map area. 
+	Use the tabs to navigate to different pages of the site as required. 
+	You may get additional information on the markers by clicking on each one. 
+	If you have any additional questions, please send us an email at support@uwiremotedata.com.
+	</p>
+	
+	<div id="mail_support">
+	<h2>Contact Us</h2>
+	<p>Please type your question or concern in the text area below, enter your email address, then press submit.</p>
+	<form role="form">
+    <div class="form-group">
+      <label for="question">Question/Concern</label>
+      <textarea class="form-control" rows="5" id="question"></textarea>
+    </div>
+	<p>Please enter your email address:</p>
+	<label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email"><br/>
+	<button type="submit" class="btn-primary btn-block">Submit</button>
+	
+  </form>
+	</div>
+	
+	</div>
+	
+  </div>
+
+
+</div><!-- End of Container -->
+</body>
+</html>
+
