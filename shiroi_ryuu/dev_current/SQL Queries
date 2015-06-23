@@ -1,0 +1,8 @@
+SELECT    `uwienvironmentalmonitoring`.`Date`, `uwienvironmentalmonitoring`.`Time`, `parameter`.`para_name` FROM  `unit` ,  `parameter` ,  `uwienvironmentalmonitoring` 
+WHERE `unit`.`unit_name` =  'Inlet' &&`uwienvironmentalmonitoring`.`Unit_Id` = `unit`.`unit_id` && `parameter`.`para_name` = 'Parameter_1' ORDER BY `uwienvironmentalmonitoring`.`Time`
+
+
+
+/**** SQL Query to Pull A Paraticular Parameter from the General `uwienvironmentalmonitoring` Table ****/
+
+SELECT    `uwienvironmentalmonitoring`.`Date`, `uwienvironmentalmonitoring`.`Time`, `uwienvironmentalmonitoring`.`Parameter_1` FROM  `uwienvironmentalmonitoring` 
